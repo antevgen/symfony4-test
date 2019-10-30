@@ -357,7 +357,7 @@ class User implements UserInterface, \Serializable
     /**
      * @return bool
      */
-    public function getEnabled(): bool
+    public function isEnabled(): bool
     {
         return $this->enabled;
     }
@@ -368,14 +368,6 @@ class User implements UserInterface, \Serializable
     public function setEnabled(bool $enabled): void
     {
         $this->enabled = $enabled;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isEnabled(): bool
-    {
-        return $this->enabled;
     }
 
     /**
@@ -393,5 +385,4 @@ class User implements UserInterface, \Serializable
     {
         $this->preferences = $preferences;
     }
-
 }
